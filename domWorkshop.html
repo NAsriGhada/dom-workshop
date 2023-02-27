@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="headingOne">DOM Manipulation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est amet quam maxime esse placeat, dignissimos quisquam consequuntur consequatur atque ab mollitia rem, aspernatur reiciendis nihil officiis numquam natus rerum?</p>
+        <h2 class="headingTwo">Hello World</h2>
+        <p>Another paragraph <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ad repudiandae enim maxime nemo eaque soluta alias quasi ea molestiae aut distinctio velit, magnam laborum similique, doloribus nesciunt corporis veritatis.</p>
+    </div>
+    <div>
+        <h3>Dom is fun!</h3>
+        <h4>So let's learn it!</h4>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <img src="The HTML DOM Tree of Objects.gif" alt="">
+        <p id="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo ipsum soluta quas quos aut quia rerum atque consequatur alias dolore voluptatem fugiat nulla expedita velit hic illum adipisci, debitis ut!</p>
+    </div>
+    <div id="deletedDiv">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatem iusto minus, eum, nisi consequuntur laboriosam odit natus ex ea rem dignissimos aliquid error beatae minima deserunt! Distinctio, provident sapiente?</p>
+        <hr>
+    </div>
+    <div id="replacingChild">
+        <p id="replacingChildOfP">Mastering JS will make DOM easier to learn</p>
+    </div>
+    <h1 onclick='document.getElementById("demo").innerHTML="yes!"' id="demo">I love JavaScript!</h1>
+    <h1 id="demoTwo">I love JavaScript a lot!</h1>
+    <h1 id="demoThree">JavaScript is amazing!</h1>
+    
+    <script src="/domWorkshop.js"></script>
+    <script type="text/javascript">
+        function settingInnerHtml(){
+            var demoExample = document.getElementById('demoTwo').innerHTML = "it's interesting"
+        }
+        var demoTwo = document.getElementById('demoTwo').onclick = function(){
+            settingInnerHtml()
+        }
+        // or
+        // todo var demoTwo = document.getElementById('demoTwo').onclick = settingInnerHtml
+
+        // var demoTwo = document.getElementById("demoTwo")
+        // demoTwo.onclick = demoTwo.innerText = "it's interesting"
+        
+    </script>
+</body>
+</html>
